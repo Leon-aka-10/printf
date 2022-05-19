@@ -3,9 +3,9 @@
 int _printf(const char *format, ...)
 {
     va_list args;
-    int i, j, num;
+
+    int i;
     int n_displayed = 0;
-    char *str = NULL;
 
     va_start(args, format);
 
