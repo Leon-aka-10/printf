@@ -19,3 +19,30 @@ int _print_str(va_list args)
     }
     return (0);
 }
+
+/* print_integer */
+int _print_integer(va_list args)
+{
+	int num_length;
+
+	num_length = _print_numbers(args);
+	return (num_length);
+}
+
+/* print_unsigned_integer */
+int _unsigned_integer(va_list args)
+{
+	unsigned int num;
+
+	num = va_arg(args, unsigned int);
+
+	if (num == 0)
+	   return (_unsigned_number(num));
+	
+	if (num < 1)
+	   return (-1);
+	return (_unsigned_number(num));
+}
+
+
+

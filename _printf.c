@@ -35,7 +35,16 @@ int _printf(const char *format, ...)
                 _write('%');
                 n_displayed++;
             }
-            
+	    else if (format[i + 1] == 'd' && format[i + 1] == 'i')
+	    {
+		    i++;
+		    _print_integer(args);
+	    }
+	    else if (format[i + 1] == 'u')
+	    {
+		    i++;
+		    _unsigned_integer(args);
+	    }
         }
         
     }
