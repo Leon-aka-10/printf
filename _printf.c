@@ -51,10 +51,30 @@ int _printf(const char *format, ...)
 				i++;
 				_print_integer(args);
 			}
+			else if (format[i + 1] == 'b')
+			{
+				i++;
+				_print_binary(args);
+			}
 			else if (format[i + 1] == 'u')
 			{
 				i++;
 				_unsigned_integer(args);
+			}
+			else if (format[i + 1] == 'o')
+			{
+				i++;
+				_print_octal(args);
+			}
+			else if (format[i + 1] == 'x')
+			{
+				i++;
+				_print_hex(args);
+			}
+			else if (format[i + 1] == 'X')
+			{
+				i++;
+				_print_heX(args);
 			}
 		}
 	}
