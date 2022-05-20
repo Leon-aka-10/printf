@@ -11,5 +11,7 @@ int _print_char(va_list args);
 int _print_str(va_list args);
 int _print_integer(va_list args);
 int _unsigned_integer(va_list args);
+int _print_number(va_list args);
+int _unsgined_number(unsigned int n);
 
 #endif
