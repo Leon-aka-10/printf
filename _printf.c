@@ -46,10 +46,11 @@ int _printf(const char *format, ...)
 				case 'i':
 					total += _print_integer((long)(va_arg(args, int)));
 					break;
-			
-
 				case 'b':
 					total += _print_binary(va_arg(args, int));
+					break;
+				case 'u':
+					total += _print_integer(va_arg(args, unsigned int));
 					break;
 				case 'o':
 					total += _print_octal(va_arg(args, int));
