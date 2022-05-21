@@ -27,6 +27,9 @@ int main(void)
     _printf("Length:[%d, %i]\n", len, len);
     _printf("Unsigned:[%u]\n", ui);
     _printf("Len:[%d]\n", len);
+    _printf("Unsigned octal:[%o]\n", ui);
+    _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+    _printf("%b\n", 98);
 
     return (0);
 }
