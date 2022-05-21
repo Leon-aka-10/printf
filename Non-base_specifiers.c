@@ -25,7 +25,7 @@ int _print_str(char *string)
  */
 int _print_integer(long int var)
 {
-    int count = 0;
+	int count = 0;
 
 	if (var < 0)
 	{

@@ -61,8 +61,6 @@ int _printf(const char *format, ...)
 				case 'X':
 					total += _print_hex(va_arg(args, int));
 					break;
-				
-
 				default:
 					_write('%');
 					_write(format[count]);
