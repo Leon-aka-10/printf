@@ -40,10 +40,25 @@ int _printf(const char *format, ...)
 					_write('%');
 					total += 1;
 					break;
+				case 'd':
+					total += _print_integer((long)(va_arg(args, int)));
+					break;
+				case 'i':
+					total += _print_integer((long)(va_arg(args, int)));
+					break;
 			
 
 				case 'b':
 					total += _print_binary(va_arg(args, int));
+					break;
+				case 'o':
+					total += _print_octal(va_arg(args, int));
+					break;
+				case 'x':
+					total += _print_hex(va_arg(args, int));
+					break;
+				case 'X':
+					total += _print_hex(va_arg(args, int));
 					break;
 				
 
