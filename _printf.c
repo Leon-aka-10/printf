@@ -10,20 +10,15 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-        int count;
-	int total = 0;
-	int flag = 0;
+	int count, total = 0, flag = 0;
 
 	if (!format)
 		return (0);
-
 	va_start(args, format);
 	for (count = 0; format[count] != '\0'; count++)
 	{
 		if (format[count] == '%')
-		{
 			flag = 1;
-		}
 		else if (flag == 1)
 		{
 			flag = 0;

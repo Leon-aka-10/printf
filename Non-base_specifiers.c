@@ -2,6 +2,7 @@
 
 /**
  * _print_str - Prints a string
+ * @string: string to be printed
  * Return: Will return the amount of characters printed.
  */
 int _print_str(char *string)
@@ -21,6 +22,7 @@ int _print_str(char *string)
 
 /**
  * _print_integer - Prints an integer
+ * @var: variable to be printed
  * Return: Will return the amount of characters printed.
  */
 int _print_integer(long int var)
